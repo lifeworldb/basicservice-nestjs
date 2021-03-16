@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package basic;
+
+service BasicService {
+  rpc Ping (BasicPing) returns (Basic) {}
+}
+
+message BasicPing {
+  string msg = 1;
+}
+
+message Basic {
+  string msg = 1;
+}
